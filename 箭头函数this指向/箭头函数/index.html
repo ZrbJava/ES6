@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="box">
+      <p id="box1">11111111111</p>
+      <p id="box2">22222222222</p>
+      <p id="box3">33333333333</p>
+  </div>
+  <script>
+    console.log(box);
+    console.log(box1);
+    console.log(box2);
+    console.log(box3);
+    box.style.color = "red"
+ 
+    
+    
+  </script>
+ 
+  <!-- <script>
+    // // 1. 一个参数，省略括号
+    // var sayHello = msg => {
+    //   console.log(msg);
+    // }
+    // sayHello('hello')
+
+    // // 2. 两个参数，保留括号
+    // var add = (a, b) => {
+    //   console.log(a + b);
+    // }
+    // add(1, 2)
+
+    // // 没有参数，只有括号
+    // var printHello = () => {
+    //   console.log('hello world');
+    // }
+    // printHello()
+
+    // 注意：箭头函数中的this
+    var user1 = {
+      say: function () {
+        console.log(this);
+      }
+    }
+    user1.say() // 指向user
+
+    var user2 = {
+      say: () => {
+        console.log(this);
+      }
+    }
+    
+    user2.say() // 指向window
+
+    var user3 = {
+      say: function() {
+        setTimeout(function() {
+          console.log(this);
+        },1000);
+      }
+    }
+    user3.say()  //指向window
+
+    var user4 = {
+      say: function() {
+        // 在say函数这个地方，this是user4
+        setTimeout(() => {
+          console.log(this);
+        }, 2000);
+      }
+    }
+    user4.say() // 指向user4
+
+
+    // 结论：es6中，this的指向是：箭头函数在哪里定义，它的this就指向谁
+    // 注意，在箭头函数中不能够获取arguments
+
+
+  </script> -->
+</body>
+
+</html>
